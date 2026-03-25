@@ -23,6 +23,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OpenWeb" />
-            
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showText"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonShowProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProgressBar"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/buttonShowAlertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ShowAlertDialog"
+            android:textAllCaps="false"/>
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please input text"
+            android:maxLines="2"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100" />
+
+
+
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

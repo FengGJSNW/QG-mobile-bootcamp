@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.test)
-        
+
         // 查找 button1 并设置跳转到 SecondActivity
         val button1 : Button = findViewById(R.id.button1)
         button1.setOnClickListener {
@@ -58,6 +58,12 @@ class MainActivity : AppCompatActivity() {
         val button4 : Button = findViewById(R.id.button5)
         button4.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
+            startActivityForResult(intent, 1)
+        }
+
+        val buttonGotoPracticeLayout : Button = findViewById(R.id.buttonGotoPracticeLayout)
+        buttonGotoPracticeLayout.setOnClickListener {
+            val intent = Intent(this, PracticeLayout::class.java)
             startActivity(intent)
         }
     }
